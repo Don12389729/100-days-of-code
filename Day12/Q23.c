@@ -1,2 +1,10 @@
 #include <stdio.h>
-int main(){int d,f=0;scanf("%d",&d);if(d>30)printf("Membership Cancelled");else if(d<=5)printf("Fine ₹%d",d*2);else if(d<=10)printf("Fine ₹%d",10+(d-5)*4);else printf("Fine ₹%d",30+(d-10)*6);return 0;}
+int main(){
+    int d,f=0;
+    scanf("%d",&d);
+    if(d>30)printf("Membership Cancelled");
+    else if(d<=5)printf("Fine ₹%d",d*2);
+    else if(d<=10)printf("Fine ₹%d",10+(d-5)*4);
+    else printf("Fine ₹%d",30+(d-10)*6);
+    return 0;
+}
