@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char s[300];int i,start=1,last=0;fgets(s,sizeof(s),stdin);for(i=0;s[i]&&s[i]!='\n';i++){if(s[i]!=' '&&start){if(last)printf(" ");printf("%c.",s[i]);start=0;}if(s[i]==' '){start=1;last=1;}}return 0;}
