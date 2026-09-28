@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char s[500],word[100],best[100];int i=0,j=0,max=0,k;fgets(s,sizeof(s),stdin);while(1){if(s[i]!=' '&&s[i]!='\n'&&s[i]!='\0')word[j++]=s[i];else{word[j]='\0';if(j>max){max=j;for(k=0;k<=j;k++)best[k]=word[k];}j=0;if(!s[i]||s[i]=='\n')break;}i++;}printf("%s",best);return 0;}
