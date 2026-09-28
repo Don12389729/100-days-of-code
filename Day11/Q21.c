@@ -1,2 +1,14 @@
 #include <stdio.h>
-int main(){int m;scanf("%d",&m);char*n[]={"","January","February","March","April","May","June","July","August","September","October","November","December"};int d[]={0,31,28,31,30,31,30,31,31,30,31,30,31};if(m>=1&&m<=12)printf("%s, %d days",n[m],d[m]);else printf("Invalid");return 0;}
+int main(){
+    int m;
+    scanf("%d",&m);
+    char*n[]={
+        "","January","February","March","April","May","June","July","August","September","October","November","December"
+    };
+    int d[]={
+        0,31,28,31,30,31,30,31,31,30,31,30,31
+    };
+    if(m>=1&&m<=12)printf("%s, %d days",n[m],d[m]);
+    else printf("Invalid");
+    return 0;
+}
