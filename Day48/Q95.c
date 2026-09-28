@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char a[300],b[300];int n=0,m=0,i,j,ok=0;fgets(a,sizeof(a),stdin);fgets(b,sizeof(b),stdin);while(a[n]&&a[n]!='\n')n++;while(b[m]&&b[m]!='\n')m++;if(n==m){for(i=0;i<n;i++){ok=1;for(j=0;j<n;j++)if(a[(i+j)%n]!=b[j]){ok=0;break;}if(ok)break;}}printf(ok?"Rotation":"Not rotation");return 0;}
