@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char s[500],w[100];int i=0,j=0;fgets(s,sizeof(s),stdin);while(1){if(s[i]!=' '&&s[i]!='\n'&&s[i])w[j++]=s[i];else{while(j)putchar(w[--j]);if(s[i]==' ')putchar(' ');else break;}i++;}return 0;}
