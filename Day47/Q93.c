@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char a[300],b[300];int c[256]={0},i;fgets(a,sizeof(a),stdin);fgets(b,sizeof(b),stdin);for(i=0;a[i]&&a[i]!='\n';i++)c[(unsigned char)a[i]]++;for(i=0;b[i]&&b[i]!='\n';i++)c[(unsigned char)b[i]]--;for(i=0;i<256;i++)if(c[i]){printf("Not anagrams");return 0;}printf("Anagrams");return 0;}
