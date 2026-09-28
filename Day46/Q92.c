@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char s[300];int seen[26]={0},i;fgets(s,sizeof(s),stdin);for(i=0;s[i]&&s[i]!='\n';i++)if(s[i]>='a'&&s[i]<='z'){if(seen[s[i]-'a']){printf("%c",s[i]);return 0;}seen[s[i]-'a']=1;}printf("None");return 0;}
